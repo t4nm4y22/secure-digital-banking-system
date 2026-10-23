@@ -1,0 +1,71 @@
+{
+  "accounts": [
+    {
+      "id": "ACC00001",
+      "holderName": "Sidhant Sharma",
+      "email": "theycallmecalm@gmail.com",
+      "phone": "0987654321",
+      "balance": 40000,
+      "status": "Active",
+      "openedOn": "2026-10-23T11:14:19.678Z"
+    },
+    {
+      "id": "ACC00002",
+      "holderName": "Abhijay Negi",
+      "email": "encoresm@gmail.com",
+      "phone": "1234567890",
+      "balance": 80000,
+      "status": "Active",
+      "openedOn": "2026-10-23T11:14:53.879Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "TXN00001",
+      "fromAccountId": "ACC00001",
+      "toAccountId": "ACC00002",
+      "fromName": "Sidhant Sharma",
+      "toName": "Abhijay Negi",
+      "amount": 60000,
+      "flagged": true,
+      "timestamp": "2026-10-23T11:16:26.317Z"
+    }
+  ],
+  "otps": [
+    {
+      "accountId": "ACC00001",
+      "code": "615425",
+      "expiresAt": "2026-10-23T11:17:59.219Z",
+      "used": true
+    }
+  ],
+  "fraudAlerts": [
+    {
+      "id": "ALERT00001",
+      "transactionId": "TXN00001",
+      "accountId": "ACC00001",
+      "accountName": "Sidhant Sharma",
+      "amount": 60000,
+      "reason": "High-value transfer of ₹60,000 (above ₹50,000 threshold)",
+      "severity": "high",
+      "timestamp": "2026-10-23T11:16:26.317Z",
+      "reviewed": true
+    },
+    {
+      "id": "ALERT00002",
+      "transactionId": "TXN00001",
+      "accountId": "ACC00001",
+      "accountName": "Sidhant Sharma",
+      "amount": 60000,
+      "reason": "Large transfer (₹60,000) to a recipient this account has never paid before",
+      "severity": "medium",
+      "timestamp": "2026-10-23T11:16:26.317Z",
+      "reviewed": false
+    }
+  ],
+  "nextIds": {
+    "account": 3,
+    "transaction": 2,
+    "alert": 3
+  }
+}
